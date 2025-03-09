@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Donation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Share More Waste Less</h1>
+        <nav>
+            <a href="#list">List Food</a>
+            <a href="#match">Find NGOs</a>
+            <a href="#impact">Impact</a>
+        </nav>
+    </header>
+    
+    <section id="list">
+        <h2>List Your Surplus Food</h2>
+        <form id="foodForm">
+            <input type="text" id="foodType" placeholder="Food Type" required>
+            <input type="number" id="foodQuantity" placeholder="Quantity" required>
+            <input type="text" id="foodLocation" placeholder="Location" required>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    
+    <section id="match">
+        <h2>Nearby NGOs</h2>
+        <ul id="ngoList">
+            <li>NGO 1 - Location A <button onclick="claimFood('NGO 1')">Claim</button></li>
+            <li>NGO 2 - Location B <button onclick="claimFood('NGO 2')">Claim</button></li>
+        </ul>
+    </section>
+    
+    <section id="impact">
+        <h2>Impact Tracking</h2>
+        <p>Total Donations: <span id="donationCount">0</span></p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
